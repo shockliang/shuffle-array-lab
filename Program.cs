@@ -12,7 +12,8 @@ namespace ShuffleArrayLab
 
             for (int i = 0; i < 6000000; i++)
             {
-                ary.Shuffle();
+                //ary.Shuffle();
+                new Random().Shuffle(ary);
                 WhichOutcome(ary);
             }
 
