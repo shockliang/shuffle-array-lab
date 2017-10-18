@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace ShuffleArrayLab
 {
@@ -14,8 +15,11 @@ namespace ShuffleArrayLab
             {
                 // ary.Shuffle();
                 // new Random().Shuffle(ary);
-                FisherYatesShuffle.Shuffle<int>(ary);
-                WhichOutcome(ary);
+                //FisherYatesShuffle.Shuffle<int>(ary);
+                //var shuffledArray = ary.OrderBy(elem => Guid.NewGuid()).ToArray();
+
+                //WhichOutcome(ary);
+                WhichOutcome(OrderByShuffle.Shuffle(ary));
             }
 
             PrintOutcomes();
